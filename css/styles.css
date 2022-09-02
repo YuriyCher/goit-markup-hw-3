@@ -123,13 +123,12 @@
     /* ============heder==================    */
   
     .solutions-page
- { 
+ {  
+  text-align: center;
    padding-top:  200px;
    padding-bottom:200px;
    background-color:  #2F303A;
-    text-align: center;
-  
-  }
+   }
     
   .title-main 
   {
@@ -180,12 +179,15 @@
     
     color: var(--accent-color)
     }
-    .filtr {display: flex;align-items: center;
-        }
+    .filtr
+    {
+      display: flex;
+      align-items: center;
+    }
 
  .modal-open
  {  
-    font-family:Roboto, Raleway, sans-serif;
+font-family:Roboto, Raleway, sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
@@ -234,24 +236,15 @@ margin-top:94px;
    color: #757575;
   margin-top:10px;
 }
-team {
-
-left: 0px;
-top: 1446px;
-}
 
 
-  .team.item-team:nth-child(4n){
-    margin-right: 0px;}
-    
-   .team 
-   {display: flex;
-    flex-wrap: wrap; 
-   gap: 30px; 
-   text-align:center;
-   padding-top:94px;
-    background: #F5F4FA;
-   }
+ 
+
+  .team {display: flex; text-align: center;
+  gap: 30px;padding-top: 94px;
+  background: #F5F4FA;}
+
+
 
   
     .team-name
@@ -335,6 +328,7 @@ color:var(--accent-color);
   }
    .page-fut 
   { 
+    padding-top: 94px;
     padding-bottom: 126px;
   background: #2F303A 
   }
