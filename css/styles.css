@@ -166,7 +166,7 @@
     
   .title-main 
   {
-    font-family: 'Roboto';
+   
      font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -394,7 +394,7 @@ padding-left:15px;
    
    .container
    { 
-        width: 1200px;
+        width: 1240px;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
@@ -410,6 +410,8 @@ padding-left:15px;
         {
       display: flex; 
       flex-wrap:wrap;
+    align-content: center;    
+
       gap: 30px;
         }  
         
@@ -459,7 +461,7 @@ padding-bottom: 20px;
 
 .container-portfolio
 {
-  width: 1529,80px;
+  width: 1530px;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
