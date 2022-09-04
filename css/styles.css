@@ -133,7 +133,10 @@
   margin-left: auto;
 }
 
- .item-contakt {margin-right: 50px;}
+ .item-contakt
+  {
+  margin-right: 50px;
+  }
 
      
     /* ============heder==================    */
@@ -174,8 +177,7 @@
     
     
 .team-liter 
-{font-family: 'Roboto';
-
+{
   font-weight: 700;
   
     line-height:1.16;
@@ -246,13 +248,9 @@ color: #212121;
 
 }
    
-.modal-open {width:73px;,
-  125px;,
-  103px;,
-  112px;
+.modal-open {width:112px;
+
 height:38px;
-
-
 background: #F5F4FA;
 border-radius: 4px;}
 
@@ -325,9 +323,10 @@ padding-left:15px;
 
 
 
-.menu-link { 
+.menu-link
+ { 
     font-family:Roboto, Raleway, sans-serif;
-color:var(--accent-color);
+     color:var(--accent-color);
 }
 
   .contakt-email
@@ -388,44 +387,49 @@ color:var(--accent-color);
 
    
 
-     .container-portfolio
+   .container
    { 
-        width: 1230px;
+        width: 1200px;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
       
     }
-        gap: 30px; 
        
-      text-align: center;  width: 370px;
+       
+        
 
-        .flex-container {
-      display: flex; flex-wrap:wrap;
-   gap: 30px;
-   }  
-border: 1px solid #EEEEEE;
 
-background-color: #FFFFFF;
+       .flex-container 
+        {
+      display: flex; 
+      flex-wrap:wrap;
+      
+       gap: 30px;
+        }  
+        
+
+
   
-
-    flex-element { width: 370px;
-    background-color:url(portfolio1.jpg);
-  
-   }
-  flex-element:nth-child(3n){
-    margin-right: 0px;
-   }
-   class-card {
+   .flex-element
+   {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-card-bottom{}
+.card-bottom
+{ 
+  width: 370px;
+height: 404px;
 
-card-name
+
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+}
+
+.card-name
  {
 
 font-weight: 700;
@@ -436,7 +440,7 @@ letter-spacing: 0.06em;
 color: #212121;
 padding-top: 20px;
 }
-card-speciality
+.card-speciality
 {
 
 font-weight: 400;
