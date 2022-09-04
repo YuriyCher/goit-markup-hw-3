@@ -132,6 +132,7 @@
   align-items: center;
   margin-left: auto;
 }
+
  .item-contakt {margin-right: 50px;}
 
      
@@ -212,11 +213,16 @@
     
     color: var(--accent-color)
     }
-    .filtr
-    {
-      display: flex;
-      align-items: center;
+   
+
+    .filtr 
+    {display: flex; 
+      text-align: center;
+      gap: 8px;
+    padding-left: 254px;
     }
+
+
 
  .modal-open
  {  
@@ -240,7 +246,15 @@ color: #212121;
 
 }
    
+.modal-open {width:73px;,
+  125px;,
+  103px;,
+  112px;
+height:38px;
 
+
+background: #F5F4FA;
+border-radius: 4px;}
 
 
 
@@ -383,18 +397,55 @@ color:var(--accent-color);
         margin-left: auto;
       
     }
-     
-     .flex-container
-    {
-      display: flex;
-        flex-wrap:wrap; 
-        background-color: #2196F3;
-    }
-    .flex-element { width:calc((800-60)/3);
+        gap: 30px; 
+       
+      text-align: center;  width: 370px;
+
+        .flex-container {
+      display: flex; flex-wrap:wrap;
+   gap: 30px;
+   }  
+border: 1px solid #EEEEEE;
+
+background-color: #FFFFFF;
+  
+
+    flex-element { width: 370px;
     background-color:url(portfolio1.jpg);
-    margin-right: 30px;
+  
    }
-   .flex-element:nth-child(3n){
+  flex-element:nth-child(3n){
     margin-right: 0px;
    }
-  
+   class-card {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+card-bottom{}
+
+card-name
+ {
+
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: #212121;
+padding-top: 20px;
+}
+card-speciality
+{
+
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+
+letter-spacing: 0.03em;
+
+color: #757575;
+  padding-top: 4px;
+padding-bottom: 20px;
+}
