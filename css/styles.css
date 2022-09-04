@@ -195,7 +195,7 @@
       gap: 30px
   }
 
-.modal-open-btn
+    .modal-open-btn
 
     {
    font-family: Roboto, sans-serif;  
@@ -218,10 +218,11 @@
    
 
     .filtr 
-    {display: flex; 
+    {
+      display: flex; 
       text-align: center;
       gap: 8px;
-    padding-left: 254px;
+      padding-left: 254px;
     }
 
 
@@ -239,27 +240,28 @@ color: #212121;
   }
 
      .modal-open:hover,
-     .modal-open:focus 
-     
+     .modal-open:focus   
   {  
-    
         color: #FFFFFF;
         background: #2196F3;
 
 }
    
-.modal-open {width:112px;
-
+.modal-open 
+{
+  width:112px;
 height:38px;
 background: #F5F4FA;
-border-radius: 4px;}
+border-radius: 4px;
+}
 
 
 
 
 .page-benefits
 {
-  display: flex;gap: 30px;
+  display: flex;
+  gap: 30px;
   height: 98px;
 
 padding-left:15px;
@@ -297,7 +299,8 @@ padding-left:15px;
 
   
     .team-name
-     {  font-weight: 500;
+     { 
+       font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
    
@@ -307,7 +310,8 @@ padding-left:15px;
     letter-spacing: 0.03em;
    color: #212121;
 
-   background: #FFFFFF;}
+   background: #FFFFFF;
+  }
   
     
 .team-speciality
@@ -323,7 +327,7 @@ padding-left:15px;
 
 
 
-.menu-link
+ .menu-link
  { 
     font-family:Roboto, Raleway, sans-serif;
      color:var(--accent-color);
@@ -387,6 +391,7 @@ padding-left:15px;
 
    
 
+   
    .container
    { 
         width: 1200px;
@@ -405,33 +410,30 @@ padding-left:15px;
         {
       display: flex; 
       flex-wrap:wrap;
-      
-       gap: 30px;
+      gap: 30px;
         }  
         
 
 
   
-   .flex-element
+        
+  .card-bottom
    {
     display: block;
     max-width: 100%;
     height: auto;
-}
+   }
 
-.card-bottom
+.flex-element
 { 
   width: 370px;
 height: 404px;
-
-
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .card-name
  {
-
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -440,6 +442,7 @@ letter-spacing: 0.06em;
 color: #212121;
 padding-top: 20px;
 }
+
 .card-speciality
 {
 
@@ -452,4 +455,13 @@ letter-spacing: 0.03em;
 color: #757575;
   padding-top: 4px;
 padding-bottom: 20px;
+}
+
+.container-portfolio
+{
+  width: 1529,80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
 }
