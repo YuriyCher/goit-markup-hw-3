@@ -68,10 +68,10 @@
         margin-bottom: 0;
      }
 
-.ul
-     { 
+
+.ul     { 
         margin-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom:0px;
         padding-left: 0px;
         padding-right: 0px;
      }
@@ -167,8 +167,8 @@
     
   .title-main 
   {
-   
-     font-weight: 900;
+    font-family: 'Roboto';
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -179,8 +179,9 @@
     
 .team-liter 
 {
+ font-family: 'Roboto';
+font-style: normal;
   font-weight: 700;
-  
     line-height:1.16;
     text-align: center;
     letter-spacing: 0.03em;
@@ -230,6 +231,10 @@
 
  .modal-open
  {  
+  width:112px;
+  height:38px;
+  border-radius: 4px;
+
 font-family:Roboto, Raleway, sans-serif;
 font-weight: 500;
 font-size: 16px;
@@ -238,7 +243,10 @@ letter-spacing: 0.03em;
 
 color: #212121;
  background: #F5F4FA;
-  }
+ 
+
+
+}
 
      .modal-open:hover,
      .modal-open:focus   
@@ -248,33 +256,23 @@ color: #212121;
 
 }
    
-.modal-open 
-{
-  width:112px;
-height:38px;
-background: #F5F4FA;
-border-radius: 4px;
-}
-
-
-
 
 .page-benefits
 {
   display: flex;
+  align-content: center;
   gap: 30px;
-  height: 98px;
-
-padding-left:15px;
-
+  padding-left: 0px;
+  padding-right: 0px;
 }
+
 .item-page-benefits 
 {
-  display: flexbox;
+ height: 72;
    width: 270px; 
-   height: 48;
-}
 
+}
+  
 
 .note-benefits
  { 
@@ -340,10 +338,9 @@ padding-left:15px;
     color: #2196F3;
    }
    .contakt-email:hover,:focus
-   
-   { 
+   {
     color: var(--accent-color)
-  }
+   }
 
 
   .contakt-stil
@@ -370,15 +367,22 @@ padding-left:15px;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+  
    color: #FFFFFF; 
   }
-   .page-fut 
+   .fut 
   { 
     align-content: center;    
   background-color: #2F303A;
+  height: 252px;
   }
 
-    .tel-port 
+  .page-fut 
+  {padding-top: 60px;
+  padding-bottom: 60px;}
+
+  
+    .tel-port
     {
       font-size: 14px;
         line-height:1.7;
@@ -395,7 +399,7 @@ padding-left:15px;
    
    .container
    { 
-        width: 1240px;
+        width: 1200px;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
@@ -412,9 +416,10 @@ padding-left:15px;
       display: flex; 
       flex-wrap:wrap;
     align-content: center;    
-
-      gap: 30px;
-        }  
+    gap: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }  
         
 
 
@@ -462,9 +467,13 @@ padding-bottom: 20px;
 
 .container-portfolio
 {
-  width: 1530px;
+  width: 1200px;
         padding-right: 0px;
         padding-left: 0px;
         margin-right: auto;
         margin-left: auto;
+}
+.log-name{
+  padding-left:40px;
+
 }
