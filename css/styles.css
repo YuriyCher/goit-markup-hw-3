@@ -3,7 +3,7 @@
     --accent-color:   #212121;
     --primary-font:Roboto,sans-serif;
     --secondary-font:Raleway, sans-serif;
-    --secondary-text-color-theme-light: #2196F3;
+    --primary-text-color-theme-light: #2196F3;
     --primary-text-color-theme-dark: #FFFFFF;
     --secondary-text-color-theme-light:#757575;
                                         
@@ -41,6 +41,7 @@
 .img
 {
     display: block;
+    max-width: 100%;
     height: auto;
 }
 
@@ -114,7 +115,7 @@
 .page-header
   { padding-top: 24px;
     padding-bottom: 25px;
-    background: #FFFFFF;
+    background: var(--primary-text-color-theme-dark);
   }
 
 .page-header-container 
@@ -185,11 +186,12 @@
   .title-main 
   {
    
-  
+  text-transform: uppercase;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color:var(--primary-text-color-theme-dark);
+    
     
    }   
     
@@ -203,7 +205,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   
-  color: #212121;
+  color:var(--accent-color)
 
 }
   
@@ -223,19 +225,21 @@
     font-size: 16px;
     line-height: 1.17;
     width: 216px;
+    height: 50px;
 
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color:var(--primary-text-color-theme-dark); 
+    background:var(--primary-text-color-theme-light);
+   
     border-radius: 4px;
-
-    color: #FFFFFF; background: #2196F3;
+     
      }
      .modal-open-btn:hover,
      .modal-open-btn:focus {  
     
-    color: var(--accent-color)
+    color:var(--primary-text-color-theme-dark) ;
+    background:var(--primary-text-color-theme-light);
     }
-   
+  
 
     .filtr 
     {
@@ -317,7 +321,7 @@ color: #212121;
     font-weight: 400;
     font-size: 14px;
     line-height:1.7;
-   color: #757575;
+   color:var(--secondary-text-color-theme-light);
   
 }
 
@@ -345,9 +349,9 @@ color: #212121;
     padding-top: 30px;
     text-align: center;
     letter-spacing: 0.03em;
-   color: #212121;
-
-   background: #FFFFFF;
+   color:var(--accent-color);
+    
+   background:var(--primary-text-color-theme-dark);
   }
   
     
@@ -356,10 +360,7 @@ color: #212121;
    padding-top: 10px;
     text-align: center;
     letter-spacing: 0.03em;
-     color: #757575;
-    width: 270px;
-    --primary-text-color-theme-dark
- 
+     color:var(--secondary-text-color-theme-light);
   }
 
 
@@ -372,7 +373,7 @@ color: #212121;
 
   .contakt-email
   {font-weight: 500;
-    color: #2196F3;
+    color:var(--primary-text-color-theme-light);
    }
    .contakt-email:hover,:focus
    {
@@ -469,12 +470,13 @@ color: rgba(255, 255, 255, 0.6);
 
 
   
-        
-  .card-bottom
-   {
-    display: block;
     max-width: 100%;
     height: auto;
+        
+  .card-bottom
+   {display:flex;
+    height: 368px;
+    width: 270px;
    }
 
 .flex-element
@@ -508,7 +510,7 @@ line-height: 1.87;
 
 letter-spacing: 0.03em;
 
-color: #757575;
+color:var(--secondary-text-color-theme-light);
   margin-top: 4px;
 margin-bottom:  20px;
 }
