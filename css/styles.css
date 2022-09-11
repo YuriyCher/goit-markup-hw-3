@@ -94,6 +94,7 @@
         margin-bottom:0px;
         padding-left: 0px;
         padding-right: 0px;
+        
      }
  .container 
      {    
@@ -249,8 +250,20 @@
       gap: 8px;
       padding-left: 254px;
       margin-bottom: 50px;
+     
     }
+ .button{
 
+ padding: 2px;
+ border-width: 0px;
+ border-top-width: 0px;
+ border-right-width: 0px;
+ border-bottom-width: 0px;
+ border-left-width: 0px;
+ border-style: outset;
+ border-color: buttonborder;
+ border-image: initial;
+}
 
 
  .modal-open-everybody,
@@ -276,35 +289,37 @@ color:var(--accent-color);
 .modal-open-everybody{width: 73px;}
 .modal-open-everybody:hover,:focus
   { height: 38px;width: 73px;
+  
     
 /* 
 shadow-middle
 
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px; */
-        color: #FFFFFF;
-        background: #2196F3;
+/* border-radius: 4px; */
+        color:var(--primary-text-color-theme-dark);
+        background:var(--primary-text-color-theme-light); 
 }
 .modal-open-website{width: 125px;}
 .modal-open-website:hover,:focus
 {  
-      color: #FFFFFF;
-      background: #2196F3;
+      color:var(--primary-text-color-theme-dark);
+      background:var(--primary-text-color-theme-light);
 }
 .modal-open-application {width: 112px;}
 .modal-open-application:hover,:focus
 {  
-      color: #FFFFFF;
-      background: #2196F3;
+      color:var(--primary-text-color-theme-dark);
+      background:var(--primary-text-color-theme-light);
 } 
 .modal-open-dising{width: 103px;}
 .modal-open-dising:hover,:focus
-{ color: #FFFFFF;
-  background: #2196F3;}
+{ color:var(--accent-color);
+  background:var(--primary-text-color-theme-light);}
+
   .modal-open-marketing {width: 130px;}
 .modal-open-marketing:hover,:focus
-{ color: #FFFFFF;
-  background: #2196F3;}
+{ color:var(--primary-text-color-theme-dark);
+  background:var(--primary-text-color-theme-light);}
 
 .page-benefits
 {
@@ -438,9 +453,7 @@ card-bottom
   background-color: #2F303A;
 
   }
-  .page-foot 
-  {
-   }
+ 
 
 
     .tel-port
@@ -503,7 +516,9 @@ line-height: 2;
 letter-spacing: 0.06em;
 
 color:var(--accent-color);
-margin-top:20px;
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 20px;
 }
 
 .card-speciality
@@ -516,14 +531,17 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 
 color:var(--secondary-text-color-theme-light);
-  margin-top: 4px;
-margin-bottom:  20px;
+ padding-top:  4px;
+padding-bottom:  20px;
+padding-left: 24px;
+padding-right: 24px;
+
 }
 
 .log-name
 {
   margin-top:20px;
-  gap: 9px;
-
-
+gap: 9px;
+display: flex;
+flex-direction: column;
 }
