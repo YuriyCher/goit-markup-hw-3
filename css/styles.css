@@ -12,7 +12,7 @@
 .link
 {
     text-decoration: none
-    padding: 0;
+    padding 0;
     margin: 0;
 }
  .link-port 
@@ -65,7 +65,7 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
- color: #FFFFFF;}
+ color:var(--primary-text-color-theme-dark);}
 
   .accent-logo
 
@@ -77,10 +77,10 @@
     letter-spacing: 0.03em;
    
        
-    color:   #2196F3;
+    color:  var(--primary-text-color-theme-light);
   }
 
-    .h1,h2,h3,h4,p
+    h1,h2,h3,h4,p
     {
         font-family: Roboto, sans-serif; 
         margin-top: 0;
@@ -167,6 +167,7 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        padding: 0;
     }
     
        .button { cursor: pointer;}
@@ -247,6 +248,7 @@
       text-align: center;
       gap: 8px;
       padding-left: 254px;
+      margin-bottom: 50px;
     }
 
 
@@ -268,30 +270,38 @@ font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
 
-color: #212121;
+color:var(--accent-color);
  background: #F5F4FA;
 }
+.modal-open-everybody{width: 73px;}
 .modal-open-everybody:hover,:focus
-  {  
+  { height: 38px;width: 73px;
+    
+/* 
+shadow-middle
+
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px; */
         color: #FFFFFF;
         background: #2196F3;
 }
+.modal-open-website{width: 125px;}
 .modal-open-website:hover,:focus
 {  
       color: #FFFFFF;
       background: #2196F3;
 }
-
+.modal-open-application {width: 112px;}
 .modal-open-application:hover,:focus
 {  
       color: #FFFFFF;
       background: #2196F3;
 } 
-
+.modal-open-dising{width: 103px;}
 .modal-open-dising:hover,:focus
 { color: #FFFFFF;
   background: #2196F3;}
-
+  .modal-open-marketing {width: 130px;}
 .modal-open-marketing:hover,:focus
 { color: #FFFFFF;
   background: #2196F3;}
@@ -337,8 +347,20 @@ color: #212121;
 }
 
 
+.item-team{
+  height: 368px;
+  width: 270px;
+  margin-bottom: 9px;
+  background: var(--primary-text-color-theme-dark);
+}
+       
+card-bottom
+{display:flex;
+ height: 368px;
+ width: 270px;
+ background: var(--primary-text-color-theme-dark);
+}
 
-  
     .team-name
      { 
        font-weight: 500;
@@ -346,18 +368,18 @@ color: #212121;
         line-height: 1.18;
    
 
-    padding-top: 30px;
+    margin-top: 30px;
     text-align: center;
     letter-spacing: 0.03em;
    color:var(--accent-color);
-    
+   
    background:var(--primary-text-color-theme-dark);
   }
   
     
 .team-speciality
 {   
-   padding-top: 10px;
+   margin-top:  10px;
     text-align: center;
     letter-spacing: 0.03em;
      color:var(--secondary-text-color-theme-light);
@@ -383,7 +405,7 @@ color: #212121;
 
   .contakt-stil
   { 
-   color: #2196F3;
+   color:var(--primary-text-color-theme-light);
   }
   
   .contakt-stil:hover,:focus
@@ -393,7 +415,7 @@ color: #212121;
 
   .contakt-phone-number
    {
-    color: #757575;
+    color:var(--secondary-text-color-theme-light);
   }
    /* =======footer============   */
      
@@ -406,19 +428,19 @@ color: #212121;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
   
-   color: #FFFFFF; 
+   color:var(--primary-text-color-theme-dark); 
   }
    .foot 
-  { 
+
+  {  padding-top: 60px;
+    padding-bottom:60px;
     align-content: center;    
   background-color: #2F303A;
- height: 252px;
+
   }
- 
   .page-foot 
   {
-    padding-top: 60px;
-  padding-bottom:60 px;}
+   }
 
 
     .tel-port
@@ -441,24 +463,15 @@ color: rgba(255, 255, 255, 0.6);
    /* Портфоліо */
 
    
-  
-   .container
-
-    { 
-        width: 1200px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-      
-    }
-       
-       
-        
+   .box 
+   {
+  height:   80px;
+border: 1px solid #ECECEC;
+}
 
 
        .flex-container 
-        {
+        { 
       display: flex; 
       flex-wrap:wrap;
     align-content: center;    
@@ -470,21 +483,13 @@ color: rgba(255, 255, 255, 0.6);
 
 
   
-    max-width: 100%;
-    height: auto;
-        
-  .card-bottom
-   {display:flex;
-    height: 368px;
-    width: 270px;
-   }
-
+  
 .flex-element
 { 
   width: 370px;
-height: 404px;
-background-color: #FFFFFF;
-border: 1px solid #EEEEEE;
+
+
+
 }
 .flex-element:focus
 {
@@ -497,7 +502,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 
-color: #212121;
+color:var(--accent-color);
 margin-top:20px;
 }
 
@@ -518,5 +523,7 @@ margin-bottom:  20px;
 .log-name
 {
   margin-top:20px;
+  gap: 9px;
+
 
 }
