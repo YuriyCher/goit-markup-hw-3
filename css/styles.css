@@ -295,7 +295,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 } 
 .modal-open-dising{width: 103px;}
 .modal-open-dising:hover,:focus
-{ color:var(--accent-color);
+{ color:var(--primary-text-color-theme-dark);
   background:var(--primary-text-color-theme-light);}
 
   .modal-open-marketing {width: 130px;}
