@@ -6,7 +6,7 @@
     --primary-text-color-theme-light: #2196F3;
     --primary-text-color-theme-dark: #FFFFFF;
     --secondary-text-color-theme-light:#757575;
-                                        
+    --secondary-background-color-theme-light:#F5F4FA; 
 }
 
 .link
@@ -19,14 +19,14 @@
  {
     text-decoration: none;
     padding: 0;
-   margin: 0;
+    margin: 0;
  }
  
  .list
  { 
   list-style:none;
   padding: 0;
- 
+ margin: 0;
  
 
  }
@@ -38,7 +38,7 @@
   margin: 0;
 
 }
-.img
+img
 {
     display: block;
     max-width: 100%;
@@ -82,7 +82,7 @@
 
     h1,h2,h3,h4,p
     {
-        font-family: Roboto, sans-serif; 
+        
         margin-top: 0;
         margin-bottom: 0;
      }
@@ -104,7 +104,7 @@
         padding-left: 15px;
         padding-right: 15px; 
       }
-  section 
+  .section 
       { 
         padding-top: 94px;
          padding-bottom: 94px;
@@ -138,16 +138,9 @@
 { 
   display: flex;
   align-items:center;
-}
-.menu .menu-item
-{
-  margin-right: 50px;
+  gap: 50px;
 }
 
-.menu .menu-item +.menu-item
-{
-  margin: right 0;
-}
 
 .contakt 
 {
@@ -191,32 +184,31 @@
   text-transform: uppercase;
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
     color:var(--primary-text-color-theme-dark);
     
     
    }   
     
-    
-.team-liter 
+ 
+.do-it
 {
-
-  font-size: 36px;
-  line-height:1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  
-  color:var(--accent-color)
-
+  padding-top:0;
+ 
 }
-  
+
     
      .do 
   {
       display: flex; 
       text-align: center;
-      gap: 30px
+      gap: 30px;
+      
+
   }
 
     .modal-open-btn
@@ -227,6 +219,8 @@
     font-size: 16px;
     line-height: 1.17;
     width: 216px;
+    border: navajowhite;
+    letter-spacing: 0.06em;
     height: 50px;
 
     color:var(--primary-text-color-theme-dark); 
@@ -249,21 +243,9 @@
       text-align: center;
       gap: 8px;
       padding-left: 254px;
-      margin-bottom: 50px;
-     
+      margin-bottom: 50px;  
     }
- .button{
-
- padding: 2px;
- border-width: 0px;
- border-top-width: 0px;
- border-right-width: 0px;
- border-bottom-width: 0px;
- border-left-width: 0px;
- border-style: outset;
- border-color: buttonborder;
- border-image: initial;
-}
+ 
 
 
  .modal-open-everybody,
@@ -284,7 +266,7 @@ line-height: 1.62;
 letter-spacing: 0.03em;
 
 color:var(--accent-color);
- background: #F5F4FA;
+ background:var(secondary-background-color-theme-light);
 }
 .modal-open-everybody{width: 73px;}
 .modal-open-everybody:hover,:focus
@@ -321,6 +303,13 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 { color:var(--primary-text-color-theme-dark);
   background:var(--primary-text-color-theme-light);}
 
+  .button {
+   border-width: 0px;
+   }
+
+    
+
+
 .page-benefits
 {
   display: flex;
@@ -331,6 +320,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .item-page-benefits 
 {
+  font-weight: 700;
   font-size: 14px;
   line-height:1.14;
   letter-spacing: 0.03em;
@@ -357,24 +347,30 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 {  display: flex;
    text-align: center;
   gap: 30px;
+  background: var(--secondary-background-color-theme-light);
  
-  background: #F5F4FA;
 }
 
 
 .item-team{
-  height: 368px;
+ 
   width: 270px;
-  margin-bottom: 9px;
+ 
   background: var(--primary-text-color-theme-dark);
 }
-       
-card-bottom
-{display:flex;
- height: 368px;
- width: 270px;
- background: var(--primary-text-color-theme-dark);
-}
+   
+.team-liter 
+{
+
+  font-size: 36px;
+  line-height:1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  
+  color:var(--accent-color)
+
+}       
 
     .team-name
      { 
@@ -394,10 +390,11 @@ card-bottom
     
 .team-speciality
 {   
-   margin-top:  10px;
+    font-weight: 400;
     text-align: center;
     letter-spacing: 0.03em;
-     color:var(--secondary-text-color-theme-light);
+     margin-top:  10px;
+      color:var(--secondary-text-color-theme-light);
   }
 
 
@@ -410,11 +407,12 @@ card-bottom
 
   .contakt-email
   {font-weight: 500;
-    color:var(--primary-text-color-theme-light);
+    color: var(--accent-color)
    }
    .contakt-email:hover,:focus
    {
-    color: var(--accent-color)
+   
+    color:var(--primary-text-color-theme-light);
    }
 
 
@@ -451,7 +449,7 @@ card-bottom
     padding-bottom:60px;
     align-content: center;    
   background-color: #2F303A;
-
+  
   }
  
 
@@ -479,7 +477,10 @@ color: rgba(255, 255, 255, 0.6);
    .box 
    {
   height:   80px;
-border: 1px solid #ECECEC;
+border-bottom:1px solid#ECECEC; 
+ 
+
+
 }
 
 
@@ -516,10 +517,8 @@ line-height: 2;
 letter-spacing: 0.06em;
 
 color:var(--accent-color);
-padding-left: 24px;
-padding-right: 24px;
-padding-top: 20px;
-}
+margin-top: 20px ;
+margin-bottom: 4px;}
 
 .card-speciality
 {
@@ -531,12 +530,11 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 
 color:var(--secondary-text-color-theme-light);
- padding-top:  4px;
-padding-bottom:  20px;
-padding-left: 24px;
-padding-right: 24px;
+ margin-top: 4px ;
+margin-bottom: 20px;}
 
-}
+
+
 
 .log-name
 {
@@ -545,3 +543,14 @@ gap: 9px;
 display: flex;
 flex-direction: column;
 }
+
+.card-bottom
+
+{
+ padding-left: 24px;
+ padding-right: 24px;
+ padding-top: 20;
+ padding-bottom: 20;
+ }
+
+a{text-decoration: none;}
